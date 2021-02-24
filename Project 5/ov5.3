@@ -1,0 +1,16 @@
+# Jennifer Ly, grudat20 upppg 5.3
+
+# Besök noderna i den här grafen i DFS- och BFS-ordning med start i nod 1. I vilken ordning besöks noderna i de två fallen? 
+# Du kan anta att grannarna till en nod besöks i nummerordning.
+DFS: 1-2-3-5-4-6
+BFS: 1-2-5-3-4-6
+
+# Tidskomplexiteten för DFS blir i vissa fall mycket bättre om man använder närhetslistor i stället för en närhetsmatris. Varför då?
+En närhetsmatris kan vara ineffektiv för glesa och stora grafer, då den kommer utgöras av mestadels nollor. En närhetslista är 
+effektivare på det sätt att det inte tar mer plats än nödvändigt.
+
+# För vilken typ av grafer blir den asymptotiska tidskomplexiteten för DFS den samma för båda datastrukturerna?
+Närhetsmatriser har tidskomplexiteten O(n^2) och närhetslistor har tidskomplexiteten O(n+m), där m=#kanter.
+Den sistnämnde tidskomplexiteten bestäms av antalet kanter som algoritmen besöker plus antalet hörn som från början måste markeras 
+obesökta. För grafer med tillräckligt många kanter, specifikt m^2, kommer tidskomplexiteten O(m^2) för DFS att bli detsamma för båda
+datastrukturerna. Grafer med flera kanter kallas för multigrafer.

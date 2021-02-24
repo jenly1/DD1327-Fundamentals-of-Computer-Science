@@ -1,0 +1,30 @@
+# Jennifer Ly, grudat20 upppg 5.2
+
+Låt e(n) beteckna antalet kanter för n hörn.
+
+# Hur många kanter kan det som mest finnas i en graf med n st hörn?
+e(n) = n + sum(n-1) (sista termen indikerar på summan av helttal från 0 till n-1)
+
+Kontroll:
+e1 = 1 + 0
+e2 = 3 = 2 + 1
+a3 = 6 = 3 + (1+2)
+e4 = 10 = 4 + (1+2+3) OSV
+
+# Hur många kanter kan det som mest finnas i en enkel graf med n stycken hörn?
+e(n) = sum(n-1)
+
+Kontroll:
+e1 = 0
+e2 = 1 = 1 
+e3 = 3 = 1+2
+e4 = 6 = 1+2+3 OSV
+
+# Hur många kanter kan det som mest finnas i ett träd med n stycken hörn?
+e(n) = n-1 (i ett träd existerar inga själv-loopar eller cyklar)
+
+Kontroll:  
+e1 = 0 = 1-1
+e2 = 1 = 2-1
+e3 = 2 = 3-1
+e4 = 3 = 4-1 OSV
