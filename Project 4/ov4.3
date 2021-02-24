@@ -1,0 +1,19 @@
+# Jennifer Ly, grudat20 upppg 4.3
+
+Describe an algorithm in pseudocode that sorts n integers (where many are duplicate values) with total of k distinct integers.
+Expected time complexity is O(n + klog(k)). 
+
+Input: Unsorted list A 
+Output: Sorted list C
+
+1. Create a dictionary B with keys being the elements of vector A and corresponding values being the
+frequency of the elements. Due to the fact that we loop through A with n elements, the time 
+compplexity would be O(n).
+
+2. Sort B:s keys by quicksort. Quicksort is a sorting algorithm with time complexity O(klog(k)), as 
+there is only k distinct keys.
+    
+3. In a new vector C, which will have the same length as A, go through B and insert its key as many times
+as the keys value (frequency). Inserting elements to a list takes O(1) and looping through B takes O(k). 
+
+Total time complexity of the algorithm should be O(n + klog(k)

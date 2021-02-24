@@ -1,0 +1,24 @@
+# Jennifer Ly, grudat20 upppg 4.1
+
+# Task: Try to understand and explain any differences between theory and practice
+
+Elapsed time for pow() function     Elapsed time for sum1() function     Elapsed time for sum2() function   
+4.0531158447265625e-06              4.1961669921875e-05                  8.106231689453125e-06
+5.245208740234375e-06               0.00011706352233886719               4.9114227294921875e-05
+6.9141387939453125e-06              0.0006699562072753906                0.0004169940948486328
+2.7179718017578125e-05              0.006694316864013672                 0.0045549869537353516
+0.00028705596923828125              0.1164388656616211                   0.051178932189941406
+0.006169795989990234                0.8595230579376221                   0.4289999008178711
+
+pow() have time complexity O(logn). That means that the running time scales in a manner that is consistent 
+with the logarithm of its input size. As the size of n (input) increases by a factor 10, the running time 
+(output) should increase linearly. For the first three values of n, we can observe that the running time is 
+linear. As n becomes larger, the linearity does not hold up. A possible factor could be that for large 
+integers the modulo operation and the multiplication operation use a O(n^2) and O(n^1.585) algorithm 
+respectiveley, which is (obviously) not linear. 
+
+sum1() and sum2() have time complexity O(nlog(n)) and O(n) respectively. They both behave pretty much the 
+same and should be linear for at least small values of n. However, a slow exponential increase can be observed.
+Especially, for larger values of n the running time increases massively. For example, n=1e7 gives a running time
+of ≈20s for sum1() and ≈17s for sum2(), which is approximetely a increase of a factor of 20 for sum1() and a 
+factor of 40 for sum2(). 
