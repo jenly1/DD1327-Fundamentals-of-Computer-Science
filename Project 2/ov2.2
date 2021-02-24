@@ -1,0 +1,35 @@
+# Jennifer Ly, grudat20 uppg 2.2
+
+# Given pseudokod
+for i = 0 to n-1
+    Add the numbers A[0] thru A[i].
+    Store the result in B[i].
+
+# Beräkna tidskomplexiteten för denna algoritm och uttryck den på formen O(f(n)), 
+där funktionen f(n) är så liten och enkel som möjligt.
+
+rad 1: O(n)
+rad 2: O(n)*O(n)=O(n^2)
+rad 3: O(1)*O(n)=O(n)
+
+Värstafalls-tidskomplexitet: T(n) = n^2 + n <= n^2 + n^2 = 2n^2 -> T(n) ∈ O(n^2)
+Gäller för alla n >= 0.
+
+Svar: f(n) = n^2
+
+# Visa att tidskomplexiteten också är Ω(f(n))
+
+Omega-tidskomplexitet: T(n) = = n^2 + n >= n^2 -> T(n) ∈ Ω(n^2)
+Gäller för alla n >= 0.
+
+# Hitta på en algoritm med bättre asymptotisk tidskomplexitet. 
+Beskriv algoritmen i pseudokod och ange dess tidskomplexitet med Θ-notation.
+
+Svar:
+for i to n-1
+    if i == 0
+        B[i] = A[i]
+    else
+        B[i] = A[i]+B[i-1]
+
+Värstafalls-tidskomplexitet: T(n) = n -> T(n) ∈ O(n)
