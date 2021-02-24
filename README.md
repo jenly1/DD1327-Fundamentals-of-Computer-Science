@@ -13,4 +13,4 @@ This repository contains all projects done in the course [DD1327 - Fundamentals 
 
 # Final project 
 
-The [final project] is a physics API that lets you easily calculate the some of the longer equations in the course Modern Physics. Final grade: B.
+The [final project](https://github.com/jenly1/API-Modern-Physics) is a physics API that lets you easily calculate the some of the longer equations in the course Modern Physics. Final grade: B.
