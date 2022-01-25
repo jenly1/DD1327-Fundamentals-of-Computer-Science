@@ -15,4 +15,4 @@ More detailed descriptions of the tasks (in swedish) can be found [here](https:/
 
 # Final project 
 
-The [final project](https://github.com/jenly1/API-Modern-Physics) is a physics API that lets you easily calculate the some of the longer equations in the course Modern Physics. Final grade: B.
+The [final project](https://github.com/jenly1/API-Modern-Physics) is a physics API that lets you easily calculate the some of the longer equations in the course Modern Physics. Final grade: A.
